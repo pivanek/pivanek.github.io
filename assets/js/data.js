@@ -13,32 +13,14 @@ window.PORTFOLIO = {
   websites: [
     // TODO: zástupné weby, nahradit vlastními
     {
-      title: { cs: "Wikipedie", en: "Wikipedia" },
-      url: "https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana",
-      desc: {
-        cs: "Zástupný web – sem přijde popis projektu.",
-        en: "Placeholder site – the project description goes here.",
-      },
-      tags: ["HTML", "CSS"],
-    },
-    {
-      title: { cs: "Bootstrap", en: "Bootstrap" },
-      url: "https://getbootstrap.com",
-      desc: {
-        cs: "Zástupný web – sem přijde popis projektu.",
-        en: "Placeholder site – the project description goes here.",
-      },
-      tags: ["JavaScript", "Sass"],
-    },
-    {
-      title: { cs: "Astro", en: "Astro" },
-      url: "https://astro.build",
+      title: { cs: "Safi-Jitka", en: "Safi-Jitka" },
+      url: "https://pivanek.github.io/Safi-Jitka-Web/",
       wip: true,
       desc: {
-        cs: "Zástupný web – sem přijde popis projektu.",
-        en: "Placeholder site – the project description goes here.",
+        cs: "Základní design rozvržení stránky.",
+        en: "Initial layout design.",
       },
-      tags: ["TypeScript", "Astro"],
+      tags: ["HTML", "CSS"],
     },
   ],
 
@@ -77,18 +59,6 @@ window.PORTFOLIO = {
         "$ free -m | awk '/Mem/ {print $3 \" MB used\"}'",
         "408 MB used",
       ],
-    },
-    {
-      // TODO: doplnit, až bude aplikace pojmenovaná
-      title: { cs: "Nová aplikace", en: "New app" },
-      status: "planned",
-      kind: { cs: "Aplikace", en: "Application" },
-      desc: {
-        cs: "Na aplikaci teď začínám pracovat, podrobnosti doplním brzy.",
-        en: "I'm just starting work on an app. Details coming soon.",
-      },
-      tags: [],
-      terminal: ["$ git init new-app", "Initialized empty Git repository"],
     },
     {
       title: { cs: "Překladač podmnožiny Wrenu", en: "Wren subset compiler" },
