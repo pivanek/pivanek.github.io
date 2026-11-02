@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAVEL IVÁNEK - CV</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2b2b2b;
+            background-color: #f4f4f9;
+            line-height: 1.5;
+            padding: 20px 20px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px 35px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+            border-radius: 4px;
+        }
+
+        /* HEADER */
+        header {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #222;
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #111;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #555;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .summary {
+            font-size: 12.5px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* MAIN TWO-COLUMN LAYOUT */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 240px;
+            gap: 30px;
+        }
+
+        /* SECTION STYLES */
+        section {
+            margin-top: 15px;
+        }
+
+        section:first-child {
+            margin-top: 0;
+        }
+
+        .section-title {
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #111;
+            border-bottom: 1.5px solid #222;
+            padding-bottom: 2px;
+            margin-bottom: 10px;
+            text-transform: UPPERCASE;
+        }
+
+        .edu-item, .project-item {
+            margin-bottom: 12px;
+        }
+
+        .edu-item:last-child, .project-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .date {
+            font-size: 11.5px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 1px;
+        }
+
+        .title-sub {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 3px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 16px;
+            font-size: 12px;
+        }
+
+        li {
+            margin-bottom: 2px;
+            color: #333;
+        }
+
+        li a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+
+        /* SIDEBAR / SKILLS TABLE */
+        .sidebar {
+            border-left: 1px solid #eaeaea;
+            padding-left: 25px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 70px 1fr;
+            row-gap: 6px;
+            align-items: baseline;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        .contact-grid .skill-name {
+            font-weight: 600;
+            color: #111;
+        }
+
+        .contact-grid .skill-level a {
+            color: #444;
+            text-decoration: none;
+        }
+
+        .contact-grid .skill-level a:hover {
+            text-decoration: underline;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            row-gap: 5px;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .skill-name {
+            font-weight: 600;
+        }
+
+        .skill-level {
+            color: #555;
+            font-size: 11.5px;
+        }
+
+        .simple-list {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            body {
+                background-color: #fff;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+            .cv-container {
+                box-shadow: none;
+                padding: 30px 40px;
+                width: 100%;
+                max-width: 100%;
+                border-radius: 0;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <!-- HEADER -->
+    <header>
+        <h1>PAVEL IVÁNEK</h1>
+        <div class="subtitle">JUNIOR SOFTWARE DEVELOPER</div>
+
+        <div class="summary">
+            Junior Software Developer with a technical background spanning IT studies and hands-on experience in software development, debugging, and systems administration (C/C++, TypeScript, PHP, SQL). A quick learner skilled in object-oriented programming, database management, and agile collaboration, eager to bring adaptability and drive to a full-time software engineering role.
+        </div>
+    </header>
+
+    <!-- MAIN TWO-COLUMN CONTENT -->
+    <div class="main-layout">
+        <!-- LEFT COLUMN: WORK, EDUCATION, PROJECTS -->
+        <div class="main-content">
+            <!-- WORK EXPERIENCE -->
+            <section>
+                <h2 class="section-title">WORK EXPERIENCE</h2>
+
+                <div class="project-item">
+                    <div class="title-sub">IT Systems Administrator &nbsp;|&nbsp; Art School Tišnov</div>
+                    <div class="date">5.2026 - present</div>
+                    <ul>
+                        <li>Responsible for network administration, hardware/software maintenance, and troubleshooting across school infrastructure.</li>
+                        <li>Providing technical support and maintaining system reliability and operational security.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <div class="title-sub">Junior PHP Developer (Short-term) &nbsp;|&nbsp; Colabim</div>
+                    <div class="date">1 Month (Inter-semester)</div>
+                    <ul>
+                        <li>Focused on web application debugging and issue resolution within a PHP and Symfony stack.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section>
+                <h2 class="section-title">PROJECTS</h2>
+                
+                <div class="project-item">
+                    <div class="title-sub">Game Launcher Application (C#) | Course Project (ICS)</div>
+                    <ul>
+                        <li>Developing a desktop game launcher application.</li>
+                        <li>Collaborating within a team using Azure DevOps for project management, version control, and CI/CD pipelines.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <div class="title-sub">Wren Subset Compiler (C) | Course Project (IFJ)</div>
+                    <ul>
+                        <li>Co-developed a fully functional compiler translating a Wren programming language subset into intermediate code.</li>
+                        <li>Took primary responsibility for designing and implementing a finite state machine for parser and semantic analysis using C.</li>
+                        <li>Collaborated in a 4-person team as leader using Git version control.</li>
+                    </ul>
+                </div>
+
+                <div class="project-item">
+                    <div class="title-sub">Fitness Tracking Mobile App (React Native) | Graduation Thesis</div>
+                    <ul>
+                        <li>Designed and developed a cross-platform mobile application for tracking workouts and fitness progress.</li>
+                        <li>Implemented user interface components, local data storage, and workout tracking features using React Native and JavaScript/TypeScript.</li>
+                    </ul>
+                </div>
+            </section>
+             <!-- EDUCATION -->
+            <section>
+                <h2 class="section-title">EDUCATION</h2>
+                
+                <div class="edu-item">
+                    <div class="date">2024 - 2026</div>
+                    <div class="title-sub">Brno University of Technology (VUT) &nbsp;|&nbsp; FIT</div>
+                    <ul>
+                        <li>Completed 4 semesters of coursework focusing on Computer Science fundamentals, Algorithms (IAL), Software Development (IVS), C# Programming (ICS), and Database Systems (IDS - SQL).</li>
+                    </ul>
+                </div>
+
+                <div class="edu-item">
+                    <div class="date">2019 - 2023</div>
+                    <div class="title-sub">Secondary Industrial School Purkyňova, Brno</div>
+                    <ul>
+                        <li>Information Technology with a specialization in Programming.</li>
+                        <li>Gained early experience in software engineering concepts, web development, and small-scale programming projects.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- RIGHT COLUMN (SIDEBAR): CONTACT, SKILLS, DEVELOPER TOOLS, LANGUAGES -->
+        <aside class="sidebar">
+            <!-- CONTACT -->
+            <section>
+                <h2 class="section-title">CONTACT</h2>
+                <div class="contact-grid">
+                    <div class="skill-name">Email:</div>
+                    <div class="skill-level"><a href="mailto:p.ivanek@icloud.com">p.ivanek@icloud.com</a></div>
+
+                    <div class="skill-name">Phone:</div>
+                    <div class="skill-level">+420 730 731 521</div>
+
+                    <div class="skill-name">GitHub:</div>
+                    <div class="skill-level"><a href="https://github.com/pivanek" target="_blank">github.com/pivanek</a></div>
+
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section>
+                <h2 class="section-title">SKILLS</h2>
+                <div class="skills-grid">
+                    <div class="skill-name">C</div>
+                    <div class="skill-level">Strong</div>
+
+                    <div class="skill-name">C++</div>
+                    <div class="skill-level">Prior Experience</div>
+
+                    <div class="skill-name">C#</div>
+                    <div class="skill-level">Prior Experience</div>
+
+                    <div class="skill-name">TypeScript</div>
+                    <div class="skill-level">Active Focus</div>
+
+                    <div class="skill-name">SQL</div>
+                    <div class="skill-level">Active Focus</div>
+
+                    <div class="skill-name">PHP</div>
+                    <div class="skill-level">Prior Experience</div>
+
+                    <div class="skill-name">Python</div>
+                    <div class="skill-level">Prior Experience</div>
+                </div>
+            </section>
+
+            <!-- DEVELOPER TOOLS -->
+            <section>
+                <h2 class="section-title">DEVELOPER TOOLS</h2>
+                <p class="simple-list">Git, GitHub, Azure DevOps, DataGrip, Visual Studio</p>
+            </section>
+
+            <!-- LANGUAGES -->
+            <section>
+                <h2 class="section-title">LANGUAGES</h2>
+                <div class="skills-grid">
+                    <div class="skill-name">Czech:</div>
+                    <div class="skill-level">Native</div>
+
+                    <div class="skill-name">English:</div>
+                    <div class="skill-level">Fluent </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="section-title">OTHER</h2>
+                <div class="date">2012 - present</div>
+                <p class="simple-list">Member of the Czech National Grasski Team, represented Czech Republic on World Championship/World Cup races.</p>
+            </section>
+        </aside>
+    </div>
+</div>
+
+</body>
+</html>
