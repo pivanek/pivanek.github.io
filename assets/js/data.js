@@ -9,6 +9,7 @@ window.PORTFOLIO = {
   // zakazují (X-Frame-Options / CSP frame-ancestors, např. alza.cz) –
   // u nich nastav embed: false a dlaždice ukáže jen odkaz.
   // Ověření: curl -sI https://web.cz | grep -iE 'x-frame|content-security'
+  // wip: true – rozpracovaný web, v náhledu dostane štítek „Rozpracováno“.
   websites: [
     // TODO: zástupné weby, nahradit vlastními
     {
@@ -32,6 +33,7 @@ window.PORTFOLIO = {
     {
       title: { cs: "Astro", en: "Astro" },
       url: "https://astro.build",
+      wip: true,
       desc: {
         cs: "Zástupný web – sem přijde popis projektu.",
         en: "Placeholder site – the project description goes here.",
@@ -175,6 +177,7 @@ window.PORTFOLIO = {
       langSwitch: "EN",
       langLabel: "Switch to English",
       themeLabel: "Přepnout světlý / tmavý režim",
+      wip: "Rozpracováno",
       heroHello: "Ahoj, jsem Pavel.",
       heroLead:
         "Junior software developer z Brna a okolí. Píšu v C a C++, dělám weby a po večerech skládám vlastní linuxovou distribuci.",
@@ -205,6 +208,7 @@ window.PORTFOLIO = {
       langSwitch: "CZ",
       langLabel: "Přepnout do češtiny",
       themeLabel: "Toggle light / dark mode",
+      wip: "Work in progress",
       heroHello: "Hi, I'm Pavel.",
       heroLead:
         "Junior software developer based near Brno. I write C and C++, build websites and spend my evenings putting together my own Linux distribution.",

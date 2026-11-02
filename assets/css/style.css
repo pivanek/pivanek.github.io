@@ -314,6 +314,27 @@ a { color: inherit; }
 }
 .site__host { font-size: 20px; color: var(--text); }
 
+.site__wip {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border: 1px dashed var(--amber);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--amber);
+  box-shadow: var(--shadow);
+  font: 600 11px/1.8 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.site__wip svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
 .site__body { padding: 18px 20px 20px; }
 .site__body h3 { font-size: 20px; }
 .site__body p { margin-top: 6px; color: var(--muted); font-size: 15px; }
