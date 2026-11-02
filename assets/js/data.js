@@ -22,6 +22,16 @@ window.PORTFOLIO = {
       },
       tags: ["HTML", "CSS"],
     },
+    {
+      title: { cs: "Grasski.biz", en: "Grasski.biz" },
+      url: "https://grasski.biz/en/",
+      wip: true,
+      desc: {
+        cs: "Starý desing momentálně se předělává.",
+        en: "Old desing - making new version.",
+      },
+      tags: ["HTML", "CSS"],
+    },
   ],
 
   // status: "dev" | "done" | "planned"; featured: přes celou šířku
